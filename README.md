@@ -40,5 +40,5 @@ Your name could be here. If you use this code in your project, make a pull reque
 If you want to make the functionality for buttons better, make a pull request to the Github repo. If you think I missed something, make a pull request to this repo! I haven't been using this for a long time so I would love feedback and improvement. If you find a bug, try letting me know in the Issues tab.
 
 ## Credit
-[instant.page](https://instant.page/)
-[jiagra](https://github.com/samyk/jiagra)
+- [instant.page](https://instant.page/)
+- [jiagra](https://github.com/samyk/jiagra)
