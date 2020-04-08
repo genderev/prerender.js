@@ -31,7 +31,7 @@ function buttonRender() {
 document.getElementById("mybutton").onmouseover = function() {buttonRender()};
 document.getElementById("mybutton").ontouchstart = function() {buttonRender()};
 ```
-If you want to make the functionality for buttons better, make a pull request to the Github repo. 
+If you want to make the functionality for buttons better, make a pull request to the Github repo. `<a>` tags do not require any configuration to enable prerender besides including the script in the page.
 
 ## Happy Customers
 Your name could be here. If you use this code in your project, make a pull request to this repo so you can be added to the list.
