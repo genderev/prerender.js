@@ -34,8 +34,6 @@ You can also self-host by downloading prerender.js from Github and including it 
 To use **prerender.js** with buttons, check out buttons.js in the file directory.
 Links do not require any configuration to enable prerender besides including the code for the script on the page.
 
-## Happy Customers
-Your name could be here. If you use this code in your project, make a pull request to this repo so you can be part of the club.
 
 ## Contributors 
 If you want to make the functionality for buttons better, make a pull request to the Github repo. If you think I missed something, make a pull request to this repo! I haven't been using this for a long time so I would love feedback and improvement. If you find a bug, try letting me know in the Issues tab.
