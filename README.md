@@ -5,7 +5,7 @@
 # prerender.js 
 Prerender on hover in any browser.
 
-I made this because the current solutions for preloading pages the user hovers over do not apply to links contained in buttons, like a sign up or log in page. Also, I found a prerendering polyfill that I wanted to use in a smart way to speed up pages without manual configuration, similar to instant.page. **prerender.js** is basically [instant.page](https://instant.page/) but prerendering and for all browsers.
+I made this because the current solutions for preloading pages the user hovers over do not apply to links contained in buttons, like a sign up or log in page. **prerender.js** is basically [instant.page](https://instant.page/) but prerendering and for all browsers.
 
 ## Project Features
 
