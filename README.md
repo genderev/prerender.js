@@ -1,8 +1,5 @@
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/genderev/prerender.js/blob/master/LICENSE) 
-![badge3](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
-![badge3](https://img.shields.io/github/issues/genderev/prerender.js)
-![badge3](https://img.shields.io/github/issues-pr/genderev/prerender.js)
 
 
 # prerender.js 
