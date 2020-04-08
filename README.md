@@ -7,7 +7,7 @@ Prerendering loads all the assets of a page before the user navigates to that pa
 
 **prerender.js** is a way to preload any link the user hovers over. Based on a prerendering [polyfill](https://github.com/samyk/jiagra), it loads the next page in a hidden iframe. If that link is in a button or link element, *prerender.js runs*. If the user is on mobile, *prerender.js runs*. If the user's browser is Internet Explorer 8, *prerender.js runs*. **prerender.js** focuses on the guarantee of web performance for all users.
 
-## Data
+## Demos
 A page on my site without **prerender.js** had 1.37s page load. With **prerender.js** that same page had a 600ms page load. The website is still in development, but you can [ask me](https://twitter.com/fleshmecha) about it later when it's done.
 
 ## Code
