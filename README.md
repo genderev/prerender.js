@@ -1,5 +1,5 @@
 # prerender.js
-Prerender on hover in any browser.
+Prerender on hover in [(almost)](https://caniuse.com/#search=iframe) any browser.
 
 ## What is prerender.js?
 
