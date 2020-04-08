@@ -20,17 +20,7 @@ For the browser:
 
 ## Documentation
 
-Here's how to use **prerender.js** with buttons:
-```
-function buttonRender() {
-  var x = document.createElement("link");
-  x.setAttribute("rel", "prerender");
-  x.setAttribute("href", location.href); //location.href = "/example.html"
-  document.head.appendChild(x);
-}
-document.getElementById("mybutton").onmouseover = function() {buttonRender()};
-document.getElementById("mybutton").ontouchstart = function() {buttonRender()};
-```
+To use **prerender.js** with buttons, check out buttons.js in the file directory.
 Links do not require any configuration to enable prerender besides including the code for the script on the page.
 
 ## Happy Customers
