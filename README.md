@@ -10,7 +10,7 @@ Prerendering loads all the assets of a page before the user navigates to that pa
 ## Performance
 A page on my site without **prerender.js** had 1.37s page load. With **prerender.js** that same page had a 600ms page load. The website is still in development, but you can [ask me](https://twitter.com/fleshmecha) about it later when it's done.
 
-## Download
+## Setting Up
 
 For Node:
 `npm i prerender`
