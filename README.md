@@ -19,7 +19,7 @@ For the browser:
 
 ## Downloading
 
-You can also self-host by downloading prerender.js in this repo and including it in your webpage as a script. Self-hosting is as simple as that - wherever your html files are, put the code for prerender.js in that folder too.
+You can also self-host by downloading prerender.js from Github and including it in your webpage as a script. Self-hosting is as simple as that - wherever your html files are, put the code for prerender.js in that folder too.
 
 ## Documentation
 
