@@ -3,10 +3,8 @@
 ![badge3](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
 ![badge3](https://img.shields.io/github/issues/genderev/prerender.js)
 ![badge3](https://img.shields.io/github/issues-pr/genderev/prerender.js)
-![badge3](https://img.shields.io/github/downloads/genderev/prerender.js/total)
-![badge3](https://img.shields.io/github/languages/top/genderev/prerender.js)
-![badge](https://img.shields.io/github/stars/genderev/prerender.js?style=social)
-![badge2](https://img.shields.io/github/followers/genderev?style=social)
+
+
 # prerender.js 
 Prerender on hover in any browser.
 
