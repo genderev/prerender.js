@@ -1,7 +1,7 @@
-# Features
+# prerender.js
 Prerender on hover in any browser.
 
-## Project
+## Project Features
 
 Prerendering loads all the assets of a page before the user navigates to that page. Conventionally, prerendering [is like opening the URL in a hidden tab](http://www.stevesouders.com/blog/2013/11/07/prebrowsing/) and then showing that hidden tab once the user clicks on it.
 
