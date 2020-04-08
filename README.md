@@ -1,4 +1,4 @@
-# prerender.js ✨
+# prerender.js 
 Prerender on hover in any browser.
 
 ## Project Features
