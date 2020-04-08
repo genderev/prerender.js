@@ -19,11 +19,11 @@ A page on my site without **prerender.js** had 1.37s page load. With **prerender
 ## Installers
 
 For Node:
-`npm i prerender`
+`npm i prerender_all`
 
 
 For the browser:
-`jsDelivr.com`
+`<script src="https://cdn.jsdelivr.net/npm/prerender_all@1.0.0/prerender.js"></script>`
 
 ## Downloading
 
