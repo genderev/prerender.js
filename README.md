@@ -1,7 +1,14 @@
 # prerender.js 
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/genderev/ama)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/genderev/prerender.js/blob/master/LICENSE) ![badge](https://img.shields.io/github/stars/genderev/prerender.js?style=social)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/genderev/prerender.js/blob/master/LICENSE) 
+![badge3](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
+![badge3](https://img.shields.io/github/issues/genderev/prerender.js)
+![badge3](https://img.shields.io/github/issues-pr/genderev/prerender.js)
+![badge3](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
+![badge](https://img.shields.io/github/stars/genderev/prerender.js?style=social)
 ![badge2](https://img.shields.io/github/followers/genderev?style=social)
+
+
+
 
 Prerender on hover in any browser.
 
