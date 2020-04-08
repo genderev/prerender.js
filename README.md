@@ -20,7 +20,7 @@ For the browser:
 
 ## Documentation
 
-Here's how to use prerender.js to with button hovers:
+Here's how to use prerender.js with buttons:
 ```
 function buttonRender() {
   var x = document.createElement("link");
