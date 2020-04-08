@@ -1,6 +1,7 @@
 # prerender.js 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) ![badge](https://img.shields.io/github/stars/genderev/prerender.js?style=social)
+![badge2](https://img.shields.io/github/followers/genderev?style=social)
 
 Prerender on hover in any browser.
 
