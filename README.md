@@ -14,11 +14,12 @@ A page on my site without **prerender.js** had 1.37s page load. With **prerender
 
 For Node:
 `npm i prerender`
+For the browser:
+`jsDelivr.com`
 
 ## Downloading
 
-For the browser:
-`jsDelivr.com`
+You can also self-host by downloading prerender.js in this repo and including it in your webpage as a script. Self-hosting is as simple as that - wherever your html files are, put the code for prerender.js in that folder too.
 
 ## Documentation
 
