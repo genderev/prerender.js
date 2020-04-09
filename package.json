@@ -1,0 +1,51 @@
+{
+  "_from": "prerender_all@^1.0.1",
+  "_id": "prerender_all@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-RwK70wzUd3u5Cosamh5hsD0U2pg/lpSsqWDZpIYThmO5Y0In8K5wVJEvjYu/IY51EAtktX3daO4OFbyi6HIcjg==",
+  "_location": "/prerender_all",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "prerender_all@^1.0.1",
+    "name": "prerender_all",
+    "escapedName": "prerender_all",
+    "rawSpec": "^1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/prerender_all/-/prerender_all-1.0.1.tgz",
+  "_shasum": "8e69e987f76fea16093068e81806bbf6dd40a065",
+  "_spec": "prerender_all@^1.0.1",
+  "_where": "/Users/x",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/genderev/prerender.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Prerender the next page.",
+  "homepage": "https://github.com/genderev/prerender.js#readme",
+  "keywords": [
+    "web",
+    "performance",
+    "speed",
+    "javascript"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "prerender_all",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genderev/prerender.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
