@@ -10,9 +10,8 @@
 
 
 # prerender.js 
-Prerender on hover in any browser.
 
-I made this because the current solutions for preloading pages the user hovers over do not apply to links contained in buttons, like a sign up or log in page. **prerender.js** is basically [instant.page](https://instant.page/) but prerendering and for all browsers.
+**prerender.js** is basically [instant.page](https://instant.page/) but prerendering and for all browsers.
 
 ## Project Features
 
