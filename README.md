@@ -1,5 +1,12 @@
 
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/genderev/prerender.js/blob/master/LICENSE) 
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/genderev/prerender.js/blob/master/LICENSE) ![GitHub license](https://img.shields.io/github/languages/top/genderev/prerender.js)
+![GitHub license](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
+![GitHub license](https://img.shields.io/github/issues-pr/genderev/prerender.js)
+![GitHub license](https://img.shields.io/github/issues/genderev/prerender.js)
+![GitHub license](https://img.shields.io/github/commit-activity/y/genderev/prerender.js)
+
+
+
 
 
 # prerender.js 
