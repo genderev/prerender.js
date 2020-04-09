@@ -11,7 +11,7 @@
 
 # prerender.js 
 
-**prerender.js** is basically [instant.page](https://instant.page/) but prerendering and for all browsers.
+**prerender.js** is basically [instant.page](https://instant.page/) but prerendering instead of prefetching and gives support for all browsers.
 
 ## Project Features
 
