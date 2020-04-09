@@ -31,9 +31,17 @@ For Node:
 For the browser:
 `<script src="https://cdn.jsdelivr.net/npm/prerender_all@1.0.0/prerender.js"></script>`
 
+
+
 ## Downloading
 
 You can also self-host by downloading prerender.js from Github and including it in your webpage as a script. Self-hosting is as simple as that - wherever your html files are, put the code for prerender.js there too.
+
+After you've downloaded prerender.js, copy this line of code and include it in your website:
+
+`<script src="prerender.js"></script>`
+
+
 
 ## Documentation
 
