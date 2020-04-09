@@ -4,7 +4,6 @@
 ![GitHub license](https://img.shields.io/github/languages/code-size/genderev/prerender.js)
 ![GitHub license](https://img.shields.io/github/issues-pr/genderev/prerender.js)
 ![GitHub license](https://img.shields.io/github/issues/genderev/prerender.js)
-![GitHub license](https://img.shields.io/github/commit-activity/y/genderev/prerender.js)
 
 
 
