@@ -1,4 +1,4 @@
-function buttonRender() {
+buttonRender = ()=> {
 
   var x = document.createElement("link");
 
@@ -8,9 +8,9 @@ function buttonRender() {
 
   document.head.appendChild(x);
 
-}
+};
 
-document.getElementById("mybutton").onmouseover = function() {buttonRender()};
+document.getElementById("mybutton").onmouseover = ()=> {buttonRender()};
 
-document.getElementById("mybutton").ontouchstart = function() {buttonRender()};
+document.getElementById("mybutton").ontouchstart = ()=> {buttonRender()};
 
