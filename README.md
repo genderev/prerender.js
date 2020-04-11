@@ -29,7 +29,7 @@ For Node:
 
 
 For the browser:
-`<script src="https://cdn.jsdelivr.net/npm/prerender_all@1.0.0/prerender.js"></script>`
+`<script src="https://cdn.jsdelivr.net/npm/prerender_all@1.1.0/prerender.js" integrity="sha256-24v6xZyfIpefNGAWj+r65XOkqCkF9joivvLRloIyccQ=" crossorigin="anonymous"></script>`
 
 
 
