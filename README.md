@@ -10,7 +10,7 @@
 
 # prerender.js 
 
-**prerender.js** gives loads pages quickly on any browser.
+**prerender.js** loads pages quickly on any browser.
 
 ## Project Features
 
