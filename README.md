@@ -10,7 +10,7 @@
 
 # prerender.js 
 
-**prerender.js** is basically [instant.page](https://instant.page/) but prerendering instead of prefetching and gives support for all browsers.
+**prerender.js** gives loads pages quickly on any browser.
 
 ## Project Features
 
