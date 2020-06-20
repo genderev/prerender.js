@@ -27,7 +27,7 @@
 	/* see: http://ejohn.org/blog/degrading-script-tags/ */
 	/***************************************************************************/
 
-	var smartTags = function()
+	var smartTags = ()=>
 	{
 		// dynamic array, .length may change
 		for (var i = 0, l = scripts.length; i < l; i++)
@@ -114,7 +114,7 @@
 	w.setInterval = function () { return newSetTimeout(false, Array.prototype.slice.call(arguments)) };
 
 	// our new timer tracker
-	var newSetTimeout = function(timeout, args)
+	var newSetTimeout = (timeout, args)=>
 	{
 		// if we're passing a function ref or a string (don't use a string n00b!)
 		var origFn = typeof(args[0]) === 'function' ? args[0] : new Function(args[0]);
@@ -161,7 +161,7 @@
 	var prefetchObjs = [];
 
 	// Checks for a change in w.location.hash, and if so returns us to the original page
-	var checkHash = function(href)
+	var checkHash =(href)=>
 	{
 		// We clicked off the hash, clear the iframe and set the body back
 		if (w.location.hash !== '#' + href)
@@ -193,7 +193,7 @@
 	var rendered = {};
 
 	// we run this every time to replace iframes ASAP
-	var replaceLink = function(href)
+	var replaceLink = (href)=>
 	{
 		for (var i = 0; i < a.length; i++)
 		{
@@ -240,12 +240,12 @@
 		}
 	};
 
-	var pageY = function(elem)
+	var pageY = (elem)=>
 	{
 		return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
 	};
 
-	var prerender = function(href, i)
+	var prerender = (href, i)=>
 	{
 		// already rendered
 		if (rendered[href])
@@ -272,7 +272,7 @@
 	};
 
 	// go through objects to prerender
-	var findprerender = function(i)
+	var findprerender = (i)=>
 	{
 		for (; i < prefetchObjs.length; i++)
 			// Process link tags
@@ -285,7 +285,7 @@
 	};
 
 	// onload function for prerendering
-	var startPrerendering = function()
+	var startPrerendering = ()=>
 	{
 		// Put all the objects onto one array that we can process later
 		var llen = link.length, mlen = meta.length;
@@ -331,7 +331,7 @@
 	d._currentScript = d.currentScript;
 
 	// return script object based off of src
-	var getScriptFromURL = function(url)
+	var getScriptFromURL = (url)=>
 	{
 		for (var i = 0; i < scripts.length; i++)
 			if (scripts[i].src === url)
