@@ -1,4 +1,4 @@
-(function(w, d, undefined)
+((w, d, undefined)=>
 {
 	// are degrading script tags enabled by default?
 	var degradeEnabled = 1;
@@ -27,7 +27,7 @@
 	/* see: http://ejohn.org/blog/degrading-script-tags/ */
 	/***************************************************************************/
 
-	var smartTags = function()
+	var smartTags = ()=>
 	{
 		// dynamic array, .length may change
 		for (var i = 0, l = scripts.length; i < l; i++)
@@ -58,10 +58,10 @@
 	var timers = {};
 
 	// allow checking whether a timer is set, fired or cleared
-	w.checkInterval  = w.checkTimeout = function(timer) { return timers[timer] };
+	w.checkInterval  = w.checkTimeout =(timer)=> { return timers[timer] };
 
 	// return list of fired timers (at least fired once)
-	w.firedTimeouts    = w.firedIntervals = function()
+	w.firedTimeouts    = w.firedIntervals = ()=>
 	{
 		var fired = [];
 		for (var timer in timers)
@@ -71,7 +71,7 @@
 	};
 
 	// return list of cleared timers
-	w.clearedTimeouts  = w.clearedIntervals = function()
+	w.clearedTimeouts  = w.clearedIntervals = ()=>
 	{
 		var cleared = [];
 		for (var timer in timers)
@@ -81,7 +81,7 @@
 	};
 
 	// return list of active timers
-	w.activeTimeouts = w.activeIntervals = function()
+	w.activeTimeouts = w.activeIntervals =()=>
 	{
 		var active = [];
 		for (var timer in timers)
@@ -95,7 +95,7 @@
 	w._setInterval   = w.setInterval;
 	w._clearTimeout  = w.clearTimeout;
 	w._clearInterval = w.clearInterval;
-	w.clearInterval  = w.clearTimeout = function(timer)
+	w.clearInterval  = w.clearTimeout =(timer)=>
 	{
 		// if it's already fired or doesn't exist, you can't really clear it.
 		if (timers[timer] === 'active' || timers[timer] === 'firedActive')
@@ -110,11 +110,11 @@
 		// timer that doesn't exist
 		return undefined;
 	};
-	w.setTimeout  = function () { return newSetTimeout(true,  Array.prototype.slice.call(arguments)) };
-	w.setInterval = function () { return newSetTimeout(false, Array.prototype.slice.call(arguments)) };
+	w.setTimeout  =()=> { return newSetTimeout(true,  Array.prototype.slice.call(arguments)) };
+	w.setInterval =()=> { return newSetTimeout(false, Array.prototype.slice.call(arguments)) };
 
 	// our new timer tracker
-	var newSetTimeout = function(timeout, args)
+	var newSetTimeout = (timeout, args)=>
 	{
 		// if we're passing a function ref or a string (don't use a string n00b!)
 		var origFn = typeof(args[0]) === 'function' ? args[0] : new Function(args[0]);
@@ -122,10 +122,10 @@
 		// our function calls a placeholder function that gets replaced once we know our timer id
 		// leave origFn in there just in case we get called before getting replaced (shouldn't happen)
 		// gecko also passes back the # of ms late it was to call back
-		var temp = function(ms) { return origFn(ms); };
+		var temp =(ms)=> { return origFn(ms); };
 
 		// replace with placeholder
-		args[0] = function(ms) { return temp(ms) };
+		args[0] =(ms)=> { return temp(ms) };
 
 		// create our real timer
 		// XXX -- do we need to allow different scope other than `this`?
@@ -136,7 +136,7 @@
 
 		// now change the sub-function we call to know when we've fired
 		// now that we know our timer ID (only known AFTER calling setTimeout)
-		temp = function(ms)
+		temp = (ms)=>
 		{
 			// now we've been fired by the timeout
 			timers[timer] = timeout ? 'fired' : 'firedActive';
@@ -161,7 +161,7 @@
 	var prefetchObjs = [];
 
 	// Checks for a change in w.location.hash, and if so returns us to the original page
-	var checkHash = function(href)
+	var checkHash =(href)=>
 	{
 		// We clicked off the hash, clear the iframe and set the body back
 		if (w.location.hash !== '#' + href)
@@ -193,21 +193,21 @@
 	var rendered = {};
 
 	// we run this every time to replace iframes ASAP
-	var replaceLink = function(href)
+	var replaceLink = (href)=>
 	{
 		for (var i = 0; i < a.length; i++)
 		{
 			if (a[i].href === href || a[i].href === href + '/')
 			{
 				var oldOnclick = a[i].onclick;
-				a[i].onclick = (function(href, oldOnclick) {
-					return function() {
+				a[i].onclick = ((href, oldOnclick)=> {
+					return ()=> {
 						if (oldOnclick) oldOnclick();
 
 						// Set a new location, so the back button returns us to our original page
 						w.location.href = '#' + href;
 						// Look for the hash to change. If it does (back button pressed), hide the iframe
-						(function()
+						(()=>
 						{
 							if (!checkHash(href))
 								w.setTimeout(arguments.callee, 100);
@@ -240,12 +240,12 @@
 		}
 	};
 
-	var pageY = function(elem)
+	var pageY = (elem)=>
 	{
 		return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
 	};
 
-	var prerender = function(href, i)
+	var prerender = (href, i)=>
 	{
 		// already rendered
 		if (rendered[href])
@@ -257,7 +257,7 @@
 		var iframe = d.createElement(useIframe ? 'iframe' : 'img');
 		iframe.style.visibility = 'hidden';
 		iframe.style.position   = 'absolute';
-		iframe.onload = iframe.onerror = function()
+		iframe.onload = iframe.onerror =()=>
 		{
 			// load next prerender so we don't render multiple items simultaneously
 			if (useIframe && replaceLinks)
@@ -272,7 +272,7 @@
 	};
 
 	// go through objects to prerender
-	var findprerender = function(i)
+	var findprerender = (i)=>
 	{
 		for (; i < prefetchObjs.length; i++)
 			// Process link tags
@@ -285,7 +285,7 @@
 	};
 
 	// onload function for prerendering
-	var startPrerendering = function()
+	var startPrerendering = ()=>
 	{
 		// Put all the objects onto one array that we can process later
 		var llen = link.length, mlen = meta.length;
@@ -331,7 +331,7 @@
 	d._currentScript = d.currentScript;
 
 	// return script object based off of src
-	var getScriptFromURL = function(url)
+	var getScriptFromURL = (url)=>
 	{
 		for (var i = 0; i < scripts.length; i++)
 			if (scripts[i].src === url)
@@ -340,7 +340,7 @@
 		return undefined;
 	}
 
-	var actualScript = d.actualScript = function()
+	var actualScript = d.actualScript = ()=>
 	{
 		// use native implementation if it knows what's up (doubt it, sucker)
 		if (d._currentScript)
@@ -354,7 +354,7 @@
 		/*
 		if (navigator.userAgent.indexOf('MSIE ') !== -1)
 		{
-			w.onerror = function(error, url, line)
+			w.onerror = (error, url, line)=>
 			{
 				if (error.indexOf('Object exp') !== -1)
 				{
@@ -392,7 +392,7 @@
 	/***************************************************************************/
 	/* onload events to fire */
 	/***************************************************************************/
-	addEvent(function() {
+	addEvent(()=> {
 		// begin our prerendering routine
 		startPrerendering();
 
@@ -405,7 +405,7 @@
 	/* general functions */
 	/***************************************************************************/
 
-	function addEvent(cb, evt, obj)
+	var addEvent = (cb, evt, obj)=>
 	{
 		// default to onload
 		if (!evt)
@@ -427,13 +427,13 @@
 	}
 
 
-	function tru(test)
+	const tru = (test)=>
 	{
 		return test === 'true' || test === true || test === '1' || test === 1;
 	}
 
 	// explicit false, this is NOT the same as !tru()
-	function fals(test)
+        const fals = (test)=>
 	{
 		return test === 'false' || test === false || test === '0' || test === 0;
 	}
